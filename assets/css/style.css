@@ -18,6 +18,10 @@ body {
     background-size: cover;
 }
 
+input{
+    font-family: 'Poppins', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -52,6 +56,17 @@ main {
 .input-container p {
     font-size: 1.5rem;
 }
+.input-container p::before{
+    content: "\f105";
+    color: white;
+    font-family: "Font Awesome 6 Free";
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
 
 .input-container input {
     width: 250px;
@@ -64,20 +79,22 @@ main {
 }
 
 .input-container input[type=submit] {
-    width: 100px;
-    margin: 0;
+    width: 110px;
+    margin: -20px 0 30px;
     border-radius: 10px;
     color: black;
+    padding: 2px;
+    border: 2px solid black;
     background: #c0c0c0;
     float: right;
     cursor: pointer;
 }
 
-.price{
+.price {
     font-size: 1.5rem;
     display: none;
 }
 
-#total{
+#total {
     float: right;
 }
